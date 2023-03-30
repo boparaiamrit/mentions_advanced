@@ -41,9 +41,9 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget>[
-          RaisedButton(
+          GestureDetector(
             child: Text('Get Text'),
-            onPressed: () {
+            onTap: () {
               print(key.currentState!.controller!.markupText);
             },
           ),
