@@ -435,8 +435,10 @@ class FlutterMentionsState extends State<FlutterMentions> {
           },
         ),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             ...widget.leading,
+            SizedBox(width: 10),
             Expanded(
               child: TextField(
                 maxLines: widget.maxLines,
@@ -474,6 +476,7 @@ class FlutterMentionsState extends State<FlutterMentions> {
                 controller: controller,
               ),
             ),
+            SizedBox(width: 10),
             ...widget.trailing,
           ],
         ),
